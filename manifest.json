@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "youtube-play-shortcut",
+  "version": "1.0",
+  "description": "A simple extension to add a play shortcut for YouTube.",
+  "permissions": [],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-play": {
+      "suggested_key": {
+        "default": "Alt+M"
+      },
+      "description": "Toggle play/pause on YouTube"
+    }
+  }
+}
