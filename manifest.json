@@ -1,18 +1,19 @@
 {
-  "manifest_version": 3,
-  "name": "youtube-play-shortcut",
-  "version": "1.0",
-  "description": "Toggle YouTube tab play/pause from anywhere with just a shortcut.",
-  "permissions": [],
-  "background": {
-    "service_worker": "background.js"
-  },
-  "commands": {
-    "toggle-play": {
-      "suggested_key": {
-        "default": "Alt+M"
-      },
-      "description": "Toggle play/pause on YouTube"
-    }
-  }
+	"manifest_version": 3,
+	"name": "youtube-play-shortcut",
+	"version": "1.0",
+	"description": "Toggle YouTube tab play/pause from anywhere with just a shortcut.",
+	"permissions": ["tabs", "scripting"],
+	"host_permissions": ["https://www.youtube.com/*"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"commands": {
+		"toggle-play": {
+			"suggested_key": {
+				"default": "Alt+M"
+			},
+			"description": "Toggle play/pause on YouTube"
+		}
+	}
 }
